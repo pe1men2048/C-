@@ -1,0 +1,21 @@
+/*Sum of two
+Find the sum of two numbers.
+
+Input
+The first line contains number of test cases t (1 ≤ t ≤ 100). Each test consists of two integers a and b.
+
+Output
+For each tests case print in a separate line the sum of two numbers a and b.*/
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t-- !=0){
+        int a,b;
+        cin >>a>>b;
+        cout << a+b<<"\n";
+    }
+}
