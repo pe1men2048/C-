@@ -1,0 +1,20 @@
+/*The sum of all
+Find the sum of all given numbers.
+
+Input
+Contains n (1 ≤ n ≤ 10^5) integers. All the numbers do not exceed 10^9 in absolute value.
+
+Output
+Print the sum of all given numbers.*/
+
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    long long int s=0,a;
+    while(cin>>a){
+        s+=a;
+    }
+    cout<<s;
+}
