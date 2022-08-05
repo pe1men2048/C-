@@ -1,0 +1,24 @@
+/*New case
+The size of the rectangular door a, b are given, and the size of the cabinet, which is shaped like a 
+cuboid x, y, z. Is it possible to carry through the closet door, if allowed to carry it so that each edge of 
+the cabinet was parallel or perpendicular to each side of the door.
+
+Input
+
+Five real numbersa, b, x, y, z (0 < a, b, x, y, z < 10).
+
+Output
+
+Print 1, if the cabinet can be free carried through the door, and 0 otherwise.*/
+
+
+#include <iostream>
+int main() {
+   double a, b, x, y, z;
+    std::cin >> a >> b >> x >> y >> z;
+    if ((x<a&&y<b) || (y<a&&x<b) || (y<a&&z<b) ||  (z<a&&y<b) || (x<a&&z<b) || (z<a&&x<b)) {
+        std::cout << 1;
+    } else {
+        std::cout << 0;
+    }
+}
