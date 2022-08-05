@@ -1,0 +1,35 @@
+/*Average Salary
+A company employs a number of employees, but not less than two: the director and
+the chief accountant. We also know that the number of employees does not exceed 1000.
+The task is to determine the average salary in the enterprise by knowing salary of every employee.
+
+Input
+
+Wages of employees (not necessarily in one line) in national currency.
+
+Output
+
+Average salary in the enterprise in UAH to within 2 digits after the decimal point.*/
+
+
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+	int n=0;             //workers
+	double m;            //salary
+	double s=0;          //amount of salaries
+	cin>>m;
+while(!cin.eof()){
+   s+=m;
+   n++;
+   cin>>m;   
+}
+	cout<<fixed<<setprecision(2)<<s/n;  // average salary
+	return 0;
+}
+
+
