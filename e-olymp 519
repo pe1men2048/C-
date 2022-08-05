@@ -1,0 +1,24 @@
+/*Sum of squares
+Find the sum of the squares of two numbers.
+
+Input
+Two integers a and b. The numbers do not exceed 10^9 by absolute value.
+
+Output
+Print a single integer a^2 + b^2.*/
+
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+     long long int a,b;
+        cin >> a >> b;
+        cout << a*a + b*b;
+  
+
+    return 0;
+}
