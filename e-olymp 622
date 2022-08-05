@@ -1,0 +1,23 @@
+/*At informatics lessons you have probably been taught to transform the numbers from
+one number system to another, and to perform other similar operations. It's time to 
+demonstrate this knowledge. Find the number of ones in binary representation of a number.
+
+Input
+One integer n (0 ≤ n ≤ 2 ∙10^9).
+
+Output
+Print the number of ones in binary representation of n.*/
+
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    long long int n,c=0;
+    cin>>n;
+    while(n !=0){
+        c+=n%2;
+        n >>=1;
+    }
+    cout<<c;
+}
