@@ -1,0 +1,28 @@
+/*GCD
+Find the Greatest Common Divisor of n numbers.
+
+Input
+The first line contains the value of n (1 < n < 101). The second line contains n positive integers. Each number is not greater than 30000.
+
+Output
+Print the Greatest Common Divisor of n numbers.*/
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,a,b,i;
+    cin>>n>>a;
+    for(int j = 0; j < n-1;j++){
+        cin>>b;
+        for(i = a; i > 0 and (b %i or a % i);--i);
+        a = i;
+    }
+cout<<i<<endl;
+
+    return 0;
+}
